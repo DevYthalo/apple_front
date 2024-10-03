@@ -1,0 +1,257 @@
+:root {
+  --bg-primary: #000000;
+  --text-light: #ffffff;
+  --text-dark: #1d1d1f;
+  --title-primary-color: #f5f5f7;
+  --subtitle-color: #6e6e73;
+  --action-color: #2997ff;
+  --spirited-main-color: #ded2b9;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+header {
+  background-color: var(--bg-primary);
+  color: var(--text-light);
+  height: fit-content;
+  opacity: 0.9;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 12px 0;
+}
+
+header nav ul {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+header nav ul li {
+  min-width: fit-content;
+  height: fit-content;
+  padding: 0 0.75rem;
+  font-size: small;
+  cursor: pointer;
+
+  list-style: none;
+}
+
+main {
+  min-height: calc(100vh - 125px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+main section {
+  text-align: center;
+  position: relative;
+  background-color: #000000;
+  padding-top: 0%;
+  width: 100%;
+  padding: 2rem;
+}
+
+main section img {
+  width: 100%;
+  height: auto;
+}
+
+main section a {
+  color: var(--action-color);
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main section a:hover {
+  text-decoration: underline;
+}
+
+main .titan-section {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--spirited-main-color);
+  letter-spacing: -0.6px;
+  line-height: 35rem;
+}
+
+
+
+.gif {
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 0px;
+}
+
+.wwdc24 {
+  top: 0;
+  width: 190%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.text-link{
+  margin-top: 2rem;
+}
+
+.wwdc24 img {
+  width: 190%;
+  height: auto;
+}
+
+main .main-section .link {
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+
+.titan {
+  width: 1920px;
+  max-width: 102%;
+  height: 40px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #0071e3;
+  color: var(--text-light);
+  font-size: 16px;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 1px #0071e3;
+  position: relative;
+  top: -145px;
+}
+
+.comprar {
+  border-style: solid;
+  background-color: transparent;
+  color: var(--action-color);
+}
+
+.comprar:hover {
+  background-color: #0071e3;
+  color: var(--text-light);
+  transition: 0.2s;
+}
+
+/*IMAGENS DE GRADE*/
+.grid-container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.button {
+  background-color: #0071e3;
+  color: var(--text-light);
+  font-size: 16px;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 1px #0071e3;
+  position: relative;
+  top: -142px;
+}
+
+.button.button-transparent {
+    border-style: solid;
+    background-color: transparent;
+    color: var(--action-color);
+}
+
+.button.button-transparent:hover {
+    background-color: #0071e3;
+  color: var(--text-light);
+  transition: 0.2s;
+}
+
+/*RODAPE*/
+.footer {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+.footer h3 {
+  color: #6e6e73;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+.footer .footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer-column {
+  flex: 1;
+  min-width: 150px;
+  margin: 0 20px;
+}
+.footer .footer-click {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #6e6e73;
+  text-align: center;
+}
+.footer .footer-click a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+.footer .footer-bottom a:hover {
+  text-decoration: underline;
+}
+.footer .footer-fim {
+  margin-top: 10px;
+}
